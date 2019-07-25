@@ -2,7 +2,13 @@
 
 ## Features
 
-Preload something when the system is idle.
+Preload something when the page is idle.
+
+Idle detection algorithm：
+
+* After page loaded, use `setTimeout` to record the callback time delay.
+* Compute the variance of multiple callback time delay.
+* The variance is low so the page is idle and stable.
 
 ## Installation
 
