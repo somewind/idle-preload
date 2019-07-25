@@ -1,8 +1,8 @@
 {
   "name": "idle-preload",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
-  "description": "preload when the system is idle",
+  "description": "preload something when the page is idle",
   "author": "somewind <neverstopsteps@gmail.com> (https://github.com/somewind)",
   "module": "esm/index.js",
   "scripts": {
