@@ -8,7 +8,7 @@ Idle detection algorithm：
 
 * After page loaded, use `setTimeout` to record the callback time delay.
 * Compute the variance of multiple callback time delay.
-* The variance is low so the page is idle and stable.
+* The page is considered idle and stable when the variance is low.
 
 ## Installation
 
