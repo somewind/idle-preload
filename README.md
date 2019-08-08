@@ -6,7 +6,7 @@ Preload something when the page is idle.
 
 Idle detection algorithm：
 
-* After page loaded, use `setTimeout` to record the callback time delay.
+* After page loaded, use `setTimeout` and record the real callback time delay.
 * Compute the variance of multiple callback time delay.
 * The page is considered idle and stable when the variance is low.
 
