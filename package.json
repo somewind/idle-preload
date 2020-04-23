@@ -1,6 +1,6 @@
 {
   "name": "idle-preload",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "license": "MIT",
   "description": "preload something when the page is idle",
   "author": "somewind <neverstopsteps@gmail.com> (https://github.com/somewind)",
