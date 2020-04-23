@@ -1,6 +1,6 @@
 {
   "name": "idle-preload",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "license": "MIT",
   "description": "preload something when the page is idle",
   "author": "somewind <neverstopsteps@gmail.com> (https://github.com/somewind)",
@@ -15,8 +15,8 @@
   "scripts": {
     "commit": "git-cz",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "build:esm": "babel src --out-dir esm --delete-dir-on-start --verbose",
-    "build:lib": "cross-env BABEL_ENV=cjs babel src --out-dir lib --delete-dir-on-start --verbose",
+    "build:esm": "babel src --out-dir esm --delete-dir-on-start --verbose --copy-files",
+    "build:lib": "cross-env BABEL_ENV=cjs babel src --out-dir lib --delete-dir-on-start --verbose --copy-files",
     "build": "npm run build:esm&&npm run build:lib",
     "test": "jest",
     "prepublishOnly": "yarn version && npm run build&&npm run test",
