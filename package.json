@@ -1,6 +1,6 @@
 {
   "name": "idle-preload",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "license": "MIT",
   "description": "preload something when the page is idle",
   "author": "somewind <neverstopsteps@gmail.com> (https://github.com/somewind)",
@@ -19,8 +19,8 @@
     "build:lib": "cross-env BABEL_ENV=cjs babel src --out-dir lib --delete-dir-on-start --verbose --copy-files",
     "build": "npm run build:esm&&npm run build:lib",
     "test": "jest",
-    "prepublishOnly": "yarn version && npm run build&&npm run test",
-    "preversion": "npm run changelog && git add .",
+    "prepublishOnly": "yarn version",
+    "preversion": "npm run build && npm run test && npm run changelog && git add .",
     "postversion": "git push && git push --tags"
   },
   "devDependencies": {
