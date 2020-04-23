@@ -1,14 +1,16 @@
 {
   "name": "idle-preload",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "license": "MIT",
   "description": "preload something when the page is idle",
   "author": "somewind <neverstopsteps@gmail.com> (https://github.com/somewind)",
   "module": "esm/index.js",
   "main": "lib/index.js",
   "files": [
-    "esm",
-    "lib"
+    "esm/index.d.ts",
+    "esm/index.js",
+    "lib/index.d.ts",
+    "lib/index.js"
   ],
   "scripts": {
     "commit": "git-cz",
