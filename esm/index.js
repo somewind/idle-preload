@@ -45,8 +45,8 @@ export var idlePreload = function idlePreload() {
             return total + curr;
           }) / samplingCount;
           var variance = samplingList.reduce(function (total, curr) {
-            return Math.pow(curr - avg, 2);
-          }, 0) / samplingCount;
+            return total + Math.pow(curr - avg, 2);
+          }) / samplingCount;
           log('variance', variance);
 
           if (variance < varianceLimit) {
