@@ -29,7 +29,7 @@ export const idlePreload = ({
         log('delay', currDelay)
         if (samplingList.length === samplingCount) {
           const avg = samplingList.reduce((total, curr) => total + curr) / samplingCount
-          const variance = samplingList.reduce((total, curr) => (curr - avg) ** 2, 0) / samplingCount
+          const variance = samplingList.reduce((total, curr) => total + ((curr - avg) ** 2)) / samplingCount
           log('variance', variance)
           if (variance < varianceLimit) {
             const task = taskList[0]
